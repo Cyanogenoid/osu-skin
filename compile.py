@@ -1,6 +1,4 @@
-import os
 import os.path
-import shutil
 import yaml
 
 
@@ -8,28 +6,30 @@ SOURCE_DIR = 'src'
 TARGET_DIR = 'bin'
 
 
-def copy(source, *targets):
-    for target in targets:
-        shutil.copyfile(source, target)
-
 def load_config():
     with open('config.yaml') as fd:
         return yaml.load(fd)
 
-def init():
-    if not os.path.exists(TARGET_DIR):
-        os.makedirs(TARGET_DIR)
+def make_rule(target, dependency, commands):
+    source_path = os.path.join(SOURCE_DIR, dependency)
+    target_path = os.path.join(TARGET_DIR, target)
+    cmd_string  = '\n\t'.join(commands).format(src=source_path, tgt=target_path)
+    return '{}: {}\n\t{}'.format(target_path, source_path, cmd_string)
+
+def process_config(config):
+    print(config)
+    for target, r in config['svg'].items():
+        rule = target + '@2x.png'
+        dep  = target + '.svg'
+        coms = [
+            'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w'], r['h']),
+            'python convert.py {{tgt}}'.format(),
+        ]
+        yield make_rule(rule, dep, coms)
 
 
-init()
 config = load_config()
-print(config)
-
-for k, v in config['mapping'].items():
-    source = os.path.join(SOURCE_DIR, k +'.png')
-    if type(v) == str:
-        vs = [v]
-    else:
-        vs = v
-    targets = [os.path.join(TARGET_DIR, target + '@2x.png') for target in vs]
-    copy(source, *targets)
+makefile = '\n'.join(process_config(config))
+with open('Makefile', 'w') as fd:
+    fd.write(makefile)
+    fd.write('\n')

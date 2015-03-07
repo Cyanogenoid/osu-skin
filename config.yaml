@@ -1,4 +1,9 @@
-mapping:
+svg:
+  cursor:
+    w: 80
+    h: 80
+png:
   blank:
-    - cursortrail
-    - star2
+    names:
+      - cursortrail
+      - star2
