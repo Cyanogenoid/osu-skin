@@ -41,6 +41,11 @@ def process_config(config):
             dep  = target + '.png'
             coms = ['cp {{src}} {{tgt}}'.format()]
             yield make_rule(rule, dep, coms)
+    for target, r in config['ini'].items():
+        rule = target + '.ini'
+        dep  = rule
+        coms = ['cp {{src}} {{tgt}}'.format()]
+        yield make_rule(rule, dep, coms)
 
 
 config = load_config()

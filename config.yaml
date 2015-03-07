@@ -7,3 +7,5 @@ png:
     names:
       - cursortrail
       - star2
+ini:
+  skin: {}
