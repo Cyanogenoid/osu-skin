@@ -23,7 +23,7 @@ def process_config(config):
         dep  = target + '.svg'
         coms = [
             'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w'], r['h']),
-            'python convert.py {{tgt}}'.format(),
+            'python fix-antialias.py {{tgt}}'.format(),
         ]
         yield make_rule(rule, dep, coms)
 
