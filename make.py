@@ -23,15 +23,19 @@ def make_rule(target, dependency, commands):
 def process_config(config):
     print(config)
     for target, r in config['svg'].items():
-        rule = target + '@2x.png'
-        dep  = target + '.svg'
-        coms = [
-            'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w'], r['h']),
-            'python fix-antialias.py {{tgt}}'.format(),
-        ]
-        yield make_rule(rule, dep, coms)
+        try:
+            names = r['names']
+        except KeyError:
+            names = [target]
+        for name in names:
+            rule = name + '@2x.png'
+            dep  = target + '.svg'
+            coms = [
+                'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w'], r['h']),
+                'python fix-antialias.py {{tgt}}'.format(),
+            ]
+            yield make_rule(rule, dep, coms)
     for target, r in config['png'].items():
-        rule = target + '.png'
         try:
             names = r['names']
         except KeyError:
