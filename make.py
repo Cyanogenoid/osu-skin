@@ -58,5 +58,6 @@ rules = list(process_config(config))
 rules.append(Rule('all', ' '.join(r.rule for r in rules), ''))
 with open('Makefile', 'w') as fd:
     for r in reversed(rules):
-        fd.write('{}: {}\n\t{}'.format(r.rule, r.deps, r.coms))
+        fd.write('{}: {}\n\t{}'.format(r.rule, '{} {}'.format('bin', r.deps), r.coms))
         fd.write('\n')
+    fd.write('bin:\n\tmkdir bin\n')
