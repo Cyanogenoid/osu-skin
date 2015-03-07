@@ -2,10 +2,22 @@ svg:
   cursor:
     w: 80
     h: 80
+  followpoint:
+    w: 256
+    h: 32
+    names:
+      - followpoint-3
+      - followpoint-4
+      - followpoint-5
 png:
   blank:
     names:
       - cursortrail
+      - followpoint-0
+      - followpoint-1
+      - followpoint-2
+      - followpoint-6
+      - followpoint-7
       - star2
 ini:
   skin: {}
