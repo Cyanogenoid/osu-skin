@@ -5,7 +5,7 @@ import yaml
 
 
 SOURCE_DIR = 'src'
-TARGET_DIR = '.'
+TARGET_DIR = 'bin'
 
 
 def copy(source, *targets):
@@ -16,7 +16,12 @@ def load_config():
     with open('config.yaml') as fd:
         return yaml.load(fd)
 
+def init():
+    if not os.path.exists(TARGET_DIR):
+        os.makedirs(TARGET_DIR)
 
+
+init()
 config = load_config()
 print(config)
 
