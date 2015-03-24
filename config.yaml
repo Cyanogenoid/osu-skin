@@ -1,7 +1,7 @@
 svg:
   cursor:
-    w: 80
-    h: 80
+    w: 84
+    h: 84
     fix: True
   followpoint:
     w: 256

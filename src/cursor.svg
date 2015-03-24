@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="256"
-   viewBox="0 0 256 256"
+   width="272"
+   height="272"
+   viewBox="0 0 272 272"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -58,8 +58,8 @@
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1"
        id="path4139"
-       cx="128"
-       cy="128"
+       cx="136"
+       cy="136"
        r="128" />
   </g>
   <g
@@ -70,8 +70,8 @@
     <circle
        style="fill:#72ff00;fill-opacity:1;stroke:none;stroke-opacity:1"
        id="path4136"
-       cx="128"
-       cy="924.36218"
+       cx="136"
+       cy="932.36218"
        r="100" />
   </g>
 </svg>
