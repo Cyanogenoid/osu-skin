@@ -14,9 +14,13 @@ def load_config():
     with open('config.yaml') as fd:
         return yaml.load(fd)
 
-def make_rule(target, dependency, commands):
-    source_path = os.path.join(SOURCE_DIR, dependency)
-    target_path = os.path.join(TARGET_DIR, target)
+def make_rule(target, dependency, commands, prefix=True):
+    if prefix:
+        source_path = os.path.join(SOURCE_DIR, dependency)
+        target_path = os.path.join(TARGET_DIR, target)
+    else:
+        source_path = dependency
+        target_path = target
     cmd_string  = '\n\t'.join(commands).format(src=source_path, tgt=target_path)
     return Rule(target_path, source_path, cmd_string)
 
@@ -29,13 +33,19 @@ def process_config(config):
             names = [target]
         for name in names:
             rule = name + '@2x.png'
+            rule_small = name + '.png'
             dep  = target + '.svg'
             coms = [
                 'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w'], r['h']),
             ]
+            coms_small = [
+                'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w']//2, r['h']//2),
+            ]
             if r.get('fix', False):
                 coms.append('python fix-antialias.py {{tgt}}'.format())
+                coms_small.append('python fix-antialias.py {{tgt}}'.format())
             yield make_rule(rule, dep, coms)
+            yield make_rule(rule_small, dep, coms_small)
     for target, r in config['png'].items():
         try:
             names = r['names']
