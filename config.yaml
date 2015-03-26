@@ -26,6 +26,12 @@ svg:
     w: 256
     h: 256
     fix: True
+  hit300:
+    w: 256
+    h: 256
+  hit300g:
+    w: 256
+    h: 256
   hitcircleoverlay:
     w: 256
     h: 256
@@ -39,6 +45,9 @@ png:
       - followpoint-2
       - followpoint-6
       - followpoint-7
+      - hit300-0
+      - hit300g-0
+      - hit300k-0
       - star2
 ini:
   skin: {}
