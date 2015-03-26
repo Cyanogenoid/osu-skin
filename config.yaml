@@ -22,16 +22,16 @@ svg:
   hit100k-0:
     w: 128
     h: 128
-  hitcircle:
-    w: 256
-    h: 256
-    fix: True
   hit300:
     w: 256
     h: 256
   hit300g:
     w: 256
     h: 256
+  hitcircle:
+    w: 256
+    h: 256
+    fix: True
   hitcircleoverlay:
     w: 256
     h: 256
