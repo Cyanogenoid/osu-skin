@@ -18,6 +18,18 @@ svg:
     w: 256
     h: 256
     fix: True
+  hit100:
+    w: 256
+    h: 256
+  hit100k:
+    w: 256
+    h: 256
+  hit100-0:
+    w: 128
+    h: 128
+  hit100k-0:
+    w: 128
+    h: 128
 png:
   blank:
     names:
