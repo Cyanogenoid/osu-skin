@@ -10,14 +10,6 @@ svg:
       - followpoint-3
       - followpoint-4
       - followpoint-5
-  hitcircle:
-    w: 256
-    h: 256
-    fix: True
-  hitcircleoverlay:
-    w: 256
-    h: 256
-    fix: True
   hit100:
     w: 256
     h: 256
@@ -30,6 +22,14 @@ svg:
   hit100k-0:
     w: 128
     h: 128
+  hitcircle:
+    w: 256
+    h: 256
+    fix: True
+  hitcircleoverlay:
+    w: 256
+    h: 256
+    fix: True
 png:
   blank:
     names:
