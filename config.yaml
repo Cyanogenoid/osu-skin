@@ -10,6 +10,12 @@ svg:
       - followpoint-3
       - followpoint-4
       - followpoint-5
+  hit0:
+    w: 256
+    h: 256
+  hit0-0:
+    w: 128
+    h: 128
   hit100:
     w: 256
     h: 256
@@ -28,6 +34,12 @@ svg:
   hit300g:
     w: 256
     h: 256
+  hit50:
+    w: 256
+    h: 256
+  hit50-0:
+    w: 128
+    h: 128
   hitcircle:
     w: 256
     h: 256
