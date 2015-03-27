@@ -51,6 +51,18 @@ def process_config(config):
         dep  = rule
         coms = ['cp {{src}} {{tgt}}'.format()]
         yield make_rule(rule, dep, coms)
+    for target, r in config['py'].items():
+        target_path = os.path.join(SOURCE_DIR, target + '.py')
+        deps = [os.path.join(SOURCE_DIR, s) for s in r['srcs']]
+        deps.append(target_path)
+        coms = 'python {}'.format(target_path)
+        try:
+            names = r['names']
+        except KeyError:
+            names = [target]
+        for name in names:
+            name = os.path.join(TARGET_DIR, name + '@2x.png')
+            yield Rule(name, ' '.join(deps), coms)
 
 
 config = load_config()
