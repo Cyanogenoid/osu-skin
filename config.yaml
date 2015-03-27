@@ -48,6 +48,12 @@ svg:
     w: 256
     h: 256
     fix: True
+  reversearrow:
+    w: 256
+    h: 256
+  sliderb0:
+    w: 256
+    h: 256
 png:
   blank:
     names:
@@ -60,6 +66,7 @@ png:
       - hit300-0
       - hit300g-0
       - hit300k-0
+      - sliderfollowcircle
       - star2
 ini:
   skin: {}
