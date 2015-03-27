@@ -22,7 +22,7 @@ def make_rule(target, dependency, commands):
 
 def process_config(config):
     print(config)
-    for target, r in config['svg'].items():
+    for target, r in config.get('svg', {}).items():
         try:
             names = r['names']
         except KeyError:
@@ -36,7 +36,7 @@ def process_config(config):
             if r.get('fix', False):
                 coms.append('python fix-antialias.py {{tgt}}'.format())
             yield make_rule(rule, dep, coms)
-    for target, r in config['png'].items():
+    for target, r in config.get('png', {}).items():
         try:
             names = r['names']
         except KeyError:
@@ -46,12 +46,12 @@ def process_config(config):
             dep  = target + '.png'
             coms = ['cp {{src}} {{tgt}}'.format()]
             yield make_rule(rule, dep, coms)
-    for target, r in config['ini'].items():
+    for target, r in config.get('ini', {}).items():
         rule = target + '.ini'
         dep  = rule
         coms = ['cp {{src}} {{tgt}}'.format()]
         yield make_rule(rule, dep, coms)
-    for target, r in config['py'].items():
+    for target, r in config.get('py', {}).items():
         target_path = os.path.join(SOURCE_DIR, target + '.py')
         deps = [os.path.join(SOURCE_DIR, s) for s in r['srcs']]
         deps.append(target_path)
