@@ -3,6 +3,21 @@ svg:
     w: 84
     h: 84
     fix: True
+  default:
+    w: 318
+    h: 318
+    fix: True
+    names:
+      - default-0
+      - default-1
+      - default-2
+      - default-3
+      - default-4
+      - default-5
+      - default-6
+      - default-7
+      - default-8
+      - default-9
   followpoint:
     w: 256
     h: 32
@@ -40,14 +55,6 @@ svg:
   hit50-0:
     w: 128
     h: 128
-  hitcircle:
-    w: 256
-    h: 256
-    fix: True
-  hitcircleoverlay:
-    w: 256
-    h: 256
-    fix: True
   reversearrow:
     w: 256
     h: 256
@@ -66,6 +73,8 @@ png:
       - hit300-0
       - hit300g-0
       - hit300k-0
+      - hitcircleoverlay
+      - hitcircle
       - sliderfollowcircle
       - star2
 ini:
