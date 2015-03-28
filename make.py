@@ -29,9 +29,16 @@ def process_config(config):
         for name in names:
             rule = name + '@2x.png'
             dep  = target + '.svg'
-            coms = [
-                'inkscape -f {{src}} -e {{tgt}} -w {} -h {}'.format(r['w'], r['h']),
-            ]
+            params = []
+            try:
+                params.append('-w {}'.format(r['w']))
+            except KeyError:
+                pass
+            try:
+                params.append('-h {}'.format(r['h']))
+            except KeyError:
+                pass
+            coms = ['inkscape -f {{src}} -e {{tgt}} {}'.format(' '.join(params))]
             if r.get('fix', False):
                 coms.append('python fix-antialias.py {{tgt}}'.format())
             yield make_rule(rule, dep, coms)

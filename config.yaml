@@ -24,42 +24,26 @@ svg:
       - followpoint-3
       - followpoint-4
       - followpoint-5
-  hit0:
-    w: 256
-    h: 256
+  hit0: {}
   hit0-0:
     w: 128
     h: 128
-  hit100:
-    w: 256
-    h: 256
-  hit100k:
-    w: 256
-    h: 256
+  hit100: {}
+  hit100k: {}
   hit100-0:
     w: 128
     h: 128
   hit100k-0:
     w: 128
     h: 128
-  hit300:
-    w: 256
-    h: 256
-  hit300g:
-    w: 256
-    h: 256
-  hit50:
-    w: 256
-    h: 256
+  hit300: {}
+  hit300g: {}
+  hit50: {}
   hit50-0:
     w: 128
     h: 128
-  reversearrow:
-    w: 256
-    h: 256
-  sliderb0:
-    w: 256
-    h: 256
+  reversearrow: {}
+  sliderb0: {}
 png:
   blank:
     names:
