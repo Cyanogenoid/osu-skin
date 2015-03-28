@@ -1,8 +1,7 @@
 svg:
   cursor:
-    w: 84
-    h: 84
-    fix: True
+    w: 160
+    h: 160
   default:
     w: 318
     h: 318
