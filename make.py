@@ -21,7 +21,6 @@ def make_rule(target, dependency, commands):
     return Rule(target_path, source_path, cmd_string)
 
 def process_config(config):
-    print(config)
     for target, r in config.get('svg', {}).items():
         try:
             names = r['names']
