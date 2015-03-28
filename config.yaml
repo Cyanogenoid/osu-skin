@@ -6,7 +6,6 @@ svg:
   default:
     w: 318
     h: 318
-    fix: True
     names:
       - default-0
       - default-1
