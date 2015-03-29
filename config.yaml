@@ -42,6 +42,51 @@ svg:
     w: 128
     h: 128
   reversearrow: {}
+  selection-mod-autoplay:
+    w: 128
+    h: 128
+  selection-mod-cinema:
+    w: 128
+    h: 128
+  selection-mod-doubletime:
+    w: 128
+    h: 128
+  selection-mod-easy:
+    w: 128
+    h: 128
+  selection-mod-flashlight:
+    w: 128
+    h: 128
+  selection-mod-halftime:
+    w: 128
+    h: 128
+  selection-mod-hardrock:
+    w: 128
+    h: 128
+  selection-mod-hidden:
+    w: 128
+    h: 128
+  selection-mod-nightcore:
+    w: 128
+    h: 128
+  selection-mod-nofail:
+    w: 128
+    h: 128
+  selection-mod-perfect:
+    w: 128
+    h: 128
+  selection-mod-relax2:
+    w: 128
+    h: 128
+  selection-mod-relax:
+    w: 128
+    h: 128
+  selection-mod-spunout:
+    w: 128
+    h: 128
+  selection-mod-suddendeath:
+    w: 128
+    h: 128
   sliderb0: {}
 png:
   blank:
