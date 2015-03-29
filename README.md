@@ -13,6 +13,7 @@ Run `python make.py`, then `make`
 - blank.png: https://github.com/mathiasbynens/small/blob/master/png-transparent.png
 
 ### [Google Material Design Icons](http://github.com/google/material-design-icons)
+CC-BY licensed. Changed colour to white.
 - selection-mod-autoplay.svg: android
 - selection-mod-cinema.svg: local movies
 - selection-mod-doubletime.svg: fast forward
