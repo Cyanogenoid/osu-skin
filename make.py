@@ -26,22 +26,28 @@ def process_config(config):
             names = r['names']
         except KeyError:
             names = [target]
-        for name in names:
-            rule = name + '@2x.png'
-            dep  = target + '.svg'
-            params = []
-            try:
-                params.append('-w {}'.format(r['w']))
-            except KeyError:
-                pass
-            try:
-                params.append('-h {}'.format(r['h']))
-            except KeyError:
-                pass
-            coms = ['inkscape -f {{src}} -e {{tgt}} {}'.format(' '.join(params))]
-            if r.get('fix', False):
-                coms.append('python fix-antialias.py {{tgt}}'.format())
-            yield make_rule(rule, dep, coms)
+
+        rule = names[0] + '@2x.png'
+        dep  = target + '.svg'
+        params = []
+        try:
+            params.append('-w {}'.format(r['w']))
+        except KeyError:
+            pass
+        try:
+            params.append('-h {}'.format(r['h']))
+        except KeyError:
+            pass
+        coms = ['inkscape -f {{src}} -e {{tgt}} {}'.format(' '.join(params))]
+        if r.get('fix', False):
+            coms.append('python fix-antialias.py {{tgt}}'.format())
+        r = make_rule(rule, dep, coms)
+        yield r
+
+        for name in names[1:]:
+            name = os.path.join(TARGET_DIR, name + '@2x.png')
+            com = 'cp {} {}'.format(dep, name)
+            yield Rule(name, r.rule, com)
     for target, r in config.get('png', {}).items():
         try:
             names = r['names']
