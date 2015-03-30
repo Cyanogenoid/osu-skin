@@ -63,7 +63,7 @@ def process_png(target, r):
         rule = name   + '@2x.png'
         dep  = target + '.png'
         coms = ['cp {{src}} {{tgt}}'.format()]
-        return make_rule(rule, dep, coms)
+        yield make_rule(rule, dep, coms)
 
 def process_ini(target, r):
     rule = target + '.ini'
@@ -90,7 +90,7 @@ def process_config(config):
     for target, r in config.get('py', {}).items():
         yield from process_py(target, r)
     for target, r in config.get('png', {}).items():
-        yield process_png(target, r)
+        yield from process_png(target, r)
     for target, r in config.get('ini', {}).items():
         yield process_ini(target, r)
 
