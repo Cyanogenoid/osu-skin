@@ -1,4 +1,7 @@
 svg:
+  approachcircle:
+    w: 278
+    h: 278
   cursor:
     w: 160
     h: 160
