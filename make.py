@@ -43,7 +43,7 @@ def process_svg(target, r):
     yield r
     for name in names[1:]:
         name = os.path.join(TARGET_DIR, name + '@2x.png')
-        com = 'cp {} {}'.format(dep, name)
+        com = 'cp {} {}'.format(r.rule, name)
         yield Rule(name, r.rule, com)
 
 def process_png(target, r):
