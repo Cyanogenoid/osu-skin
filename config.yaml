@@ -23,24 +23,15 @@ svg:
       - followpoint-3
       - followpoint-4
       - followpoint-5
-  hit0: {}
-  hit0-0:
+  hit*-0:
     w: 128
     h: 128
+  hit0: {}
   hit100: {}
   hit100k: {}
-  hit100-0:
-    w: 128
-    h: 128
-  hit100k-0:
-    w: 128
-    h: 128
   hit300: {}
   hit300g: {}
   hit50: {}
-  hit50-0:
-    w: 128
-    h: 128
   reversearrow: {}
   selection-mod-*:
     w: 128
