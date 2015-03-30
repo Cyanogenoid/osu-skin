@@ -44,8 +44,8 @@ svg:
     w: 80
     h: 80
   spinner-top:
-    w: 512
-    h: 512
+    w: 630
+    h: 630
 png:
   blank:
     names:
