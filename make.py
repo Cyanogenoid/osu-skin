@@ -1,5 +1,8 @@
 import collections
+import os
 import os.path
+import re
+import sys
 import yaml
 
 
@@ -92,10 +95,16 @@ def process_config(config):
         yield process_ini(target, r)
 
 def collect_all_rule(rules):
-    targets  = [r.rule for r in rules if '%' not in r.rule]
+    targets = [r.rule for r in rules if '%' not in r.rule]
     for r in rules:
         if '%' in r.rule:
-            targets.append('$(wildcard {})'.format(r.rule.replace('%', '*')))
+            regex = re.compile(r.deps.replace('%', '(.*)'))
+            template = r.rule.replace('%', '{}')
+            path_dir = os.path.dirname(r.deps)
+            for f in os.listdir(path_dir):
+                match = regex.match(os.path.join(path_dir, f))
+                if match:
+                    targets.append(template.format(*match.groups()))
     return Rule('all', ' '.join(targets), '')
 
 
