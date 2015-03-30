@@ -37,6 +37,12 @@ svg:
     w: 128
     h: 128
   sliderb0: {}
+  spinner-middle2:
+    w: 80
+    h: 80
+  spinner-top:
+    w: 512
+    h: 512
 png:
   blank:
     names:
@@ -52,6 +58,10 @@ png:
       - hitcircleoverlay
       - hitcircle
       - sliderfollowcircle
+      - spinner-bottom
+      - spinner-glow
+      - spinner-middle
+      - spinner-spin
       - star2
 ini:
   skin: {}
