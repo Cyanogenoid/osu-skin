@@ -38,6 +38,7 @@ svg:
   inputoverlay-key:
     w: 101
     h: 101
+  menu-button-background: {}
   reversearrow: {}
   selection-mod-*:
     w: 128
