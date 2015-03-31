@@ -45,11 +45,11 @@ svg:
     h: 128
   sliderb0: {}
   spinner-middle2:
-    w: 80
-    h: 80
+    w: 96
+    h: 96
   spinner-top:
-    w: 630
-    h: 630
+    w: 512
+    h: 512
 png:
   blank:
     names:
