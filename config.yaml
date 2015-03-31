@@ -52,18 +52,23 @@ svg:
 png:
   blank:
     names:
+      - count1
+      - count2
+      - count3
       - cursortrail
       - followpoint-0
       - followpoint-1
       - followpoint-2
       - followpoint-6
       - followpoint-7
+      - go
       - hit300-0
       - hit300g-0
       - hit300k-0
       - hitcircleoverlay
       - hitcircle
       - inputoverlay-background
+      - ready
       - sliderfollowcircle
       - spinner-bottom
       - spinner-glow
