@@ -29,3 +29,4 @@ CC-BY licensed. Changed colour to white.
 - selection-mod-relax.svg: polymer
 - selection-mod-spunout.svg: sync
 - selection-mod-suddendeath.svg: flashon
+- selection-mod-target.svg: gps fixed
