@@ -35,6 +35,9 @@ svg:
   hit300: {}
   hit300g: {}
   hit50: {}
+  inputoverlay-key:
+    w: 101
+    h: 101
   reversearrow: {}
   selection-mod-*:
     w: 128
@@ -60,6 +63,7 @@ png:
       - hit300k-0
       - hitcircleoverlay
       - hitcircle
+      - inputoverlay-background
       - sliderfollowcircle
       - spinner-bottom
       - spinner-glow
