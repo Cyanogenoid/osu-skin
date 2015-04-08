@@ -102,16 +102,20 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <path
+     d="M0 0h48v48h-48z"
+     fill="none"
+     id="path5117" />
+  <path
+     d="m 75.5,121.4375 79.86562,0 L 118.71406,84.785938 128,75.5 180.5,128 128,180.5 l -9.28594,-9.28594 36.65156,-36.65156 -79.86562,0 0,-13.125 z"
+     id="path5119"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:1" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-796.36214)">
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 128,983.94804 a 59.584999,59.584999 0 0 0 9.64062,-0.80859 A 59.584999,59.584999 0 0 1 88.56055,924.53983 59.584999,59.584999 0 0 1 138.50586,865.76444 59.584999,59.584999 0 0 0 128,864.77616 59.584999,59.584999 0 0 0 68.41406,924.3621 59.584999,59.584999 0 0 0 128,983.94804 Z"
-       id="circle4136"
-       inkscape:connector-curvature="0" />
     <ellipse
        ry="106.06987"
        rx="106.06988"
