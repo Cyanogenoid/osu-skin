@@ -71,6 +71,8 @@ png:
       - hitcircle
       - inputoverlay-background
       - ready
+      - scorebar-colour
+      - scorebar-marker
       - sliderfollowcircle
       - spinner-bottom
       - spinner-glow
