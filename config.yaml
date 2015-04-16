@@ -40,6 +40,7 @@ svg:
     h: 101
   menu-button-background: {}
   reversearrow: {}
+  scorebar-bg: {}
   selection-mod-*:
     w: 128
     h: 128
