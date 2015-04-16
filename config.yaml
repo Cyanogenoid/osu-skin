@@ -54,6 +54,17 @@ svg:
 png:
   blank:
     names:
+      - combo-0.png
+      - combo-1.png
+      - combo-2.png
+      - combo-3.png
+      - combo-4.png
+      - combo-5.png
+      - combo-6.png
+      - combo-7.png
+      - combo-8.png
+      - combo-9.png
+      - combo-x.png
       - count1
       - count2
       - count3
