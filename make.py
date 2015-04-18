@@ -98,7 +98,8 @@ def collect_all_rule(rules):
     targets = [r.rule for r in rules if '%' not in r.rule]
     for r in rules:
         if '%' in r.rule:
-            regex = re.compile(r.deps.replace('%', '(.*)'))
+            regex_string = r.deps.replace('%', '(.*)').replace('\\', '\\\\')
+            regex = re.compile(regex_string)
             template = r.rule.replace('%', '{}')
             path_dir = os.path.dirname(r.deps)
             for f in os.listdir(path_dir):
