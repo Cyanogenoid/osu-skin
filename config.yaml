@@ -48,9 +48,6 @@ svg:
   spinner-middle2:
     w: 96
     h: 96
-  spinner-top:
-    w: 512
-    h: 512
 png:
   blank:
     names:
@@ -89,6 +86,7 @@ png:
       - spinner-glow
       - spinner-middle
       - spinner-spin
+      - spinner-top
       - star2
 ini:
   skin: {}
