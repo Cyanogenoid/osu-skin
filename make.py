@@ -116,4 +116,4 @@ with open('Makefile', 'w') as fd:
     for r in reversed(rules):
         fd.write('{}: {}\n\t{}'.format(r.rule, ' '.join([r.deps, '| bin/']), r.coms))
         fd.write('\n')
-    fd.write('bin/:\n\tmkdir bin\n')
+    fd.write('bin/:\n\t@if [ ! -d bin ]; then mkdir bin; fi\n')
