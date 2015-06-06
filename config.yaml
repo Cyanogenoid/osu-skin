@@ -29,12 +29,24 @@ svg:
   hit*-0:
     w: 128
     h: 128
-  hit0: {}
-  hit100: {}
-  hit100k: {}
-  hit300: {}
-  hit300g: {}
-  hit50: {}
+  hit0:
+    w: 92
+    h: 92
+  hit100:
+    w: 92
+    h: 92
+  hit100k:
+    w: 92
+    h: 92
+  hit300:
+    w: 92
+    h: 92
+  hit300g:
+    w: 92
+    h: 92
+  hit50:
+    w: 92
+    h: 92
   inputoverlay-key:
     w: 101
     h: 101
