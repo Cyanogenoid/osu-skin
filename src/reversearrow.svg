@@ -3,6 +3,6 @@
  <path d="m0 0h48v48h-48z" fill="none"/>
  <path d="m75.5 121.44h79.866l-36.66-36.654 9.29-9.286 52.5 52.5-52.5 52.5-9.2859-9.2859 36.652-36.652h-79.866v-13.125z" fill="#fff"/>
  <g transform="translate(0 -796.36)">
-  <ellipse stroke-dashoffset="55.806" rx="106.07" cy="924.36" ry="106.07" stroke="#fff" cx="128" stroke-dasharray="23.5800004,7.86000013" stroke-width="7.86" fill="none"/>
+  <ellipse rx="106.07" stroke-dashoffset="55.806" stroke="#fff" ry="106.07" cy="924.36" cx="128" stroke-dasharray="23.5800004,7.86000013" stroke-width="7.86" fill="none"/>
  </g>
 </svg>
