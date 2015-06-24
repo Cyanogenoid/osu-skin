@@ -5,16 +5,20 @@
    <stop stop-color="#ff00a2" offset="0"/>
    <stop stop-color="#ff00a2" stop-opacity="0" offset="1"/>
   </linearGradient>
-  <linearGradient id="c" y2="924.36" xlink:href="#a" gradientUnits="userSpaceOnUse" x2="256" gradientTransform="matrix(.5 0 0 .5 -128 462.18)" y1="924.36" x1="128.21"/>
-  <linearGradient id="b" y2="924.36" xlink:href="#a" gradientUnits="userSpaceOnUse" x2="256" gradientTransform="matrix(.5 0 0 .5 128 462.18)" y1="924.36" x1="128.21"/>
-  <filter id="d" style="color-interpolation-filters:sRGB" height="2.438" width="1.0225" y="-.719" x="0">
-   <feGaussianBlur stdDeviation="1.1983415"/>
+  <linearGradient id="e" x1="128.21" xlink:href="#a" gradientUnits="userSpaceOnUse" y1="924.36" gradientTransform="matrix(.5 0 0 .5 -128 462.18)" x2="256" y2="924.36"/>
+  <linearGradient id="f" x1="128.21" xlink:href="#a" gradientUnits="userSpaceOnUse" y1="924.36" gradientTransform="matrix(.5 0 0 .5 128 462.18)" x2="256" y2="924.36"/>
+  <filter id="d" style="color-interpolation-filters:sRGB">
+   <feFlood result="flood" flood-color="rgb(0,0,0)"/>
+   <feComposite operator="in" result="composite1" in2="flood" in="SourceGraphic"/>
+   <feGaussianBlur stdDeviation="2" result="blur" in="composite1"/>
+   <feOffset result="offset" dx="0" dy="0"/>
+   <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic"/>
   </filter>
  </defs>
  <g transform="translate(0 -1020.4)">
   <g opacity=".8" filter="url(#d)" transform="matrix(.92338 0 0 .90727 7.1512 197.71)">
-   <rect opacity="1" transform="scale(-1,1)" height="4" width="128" y="922.36" x="-128" fill="url(#c)"/>
-   <rect opacity="1" height="4" width="128" y="922.36" x="128" fill="url(#b)"/>
+   <rect opacity="1" transform="scale(-1,1)" height="4" width="128" y="922.36" x="-128" fill="url(#e)"/>
+   <rect opacity="1" style="" height="4" width="128" y="922.36" x="128" fill="url(#f)"/>
   </g>
  </g>
 </svg>
