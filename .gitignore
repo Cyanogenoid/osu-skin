@@ -1,3 +1,4 @@
 *.png
 bin
 Makefile
+Thumbs.db
