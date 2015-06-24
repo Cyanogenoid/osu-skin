@@ -1,84 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="512"
-   height="512"
-   viewBox="0 0 512 512"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="cursor.svg">
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#000000"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="37.436064"
-     inkscape:cy="47.124382"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:showpageshadow="false"
-     inkscape:window-width="2498"
-     inkscape:window-height="1417"
-     inkscape:window-x="54"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Outer Ring"
-     style="display:inline"
-     transform="translate(0,240)">
-    <circle
-       style="fill:#000000;fill-opacity:0.5;stroke:none;stroke-opacity:1"
-       id="path4139"
-       cx="256"
-       cy="16"
-       r="144" />
-    <circle
-       r="128"
-       cy="16"
-       cx="256"
-       id="circle4146"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1" />
-  </g>
-  <g
-     inkscape:label="Inner Circle"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-556.36219)">
-    <circle
-       style="fill:#a2ff00;fill-opacity:1;stroke:none;stroke-opacity:1"
-       id="path4136"
-       cx="256"
-       cy="812.36218"
-       r="100" />
-  </g>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="512" width="512" version="1.1" xmlns:cc="http://creativecommons.org/ns#" viewBox="0 0 512 512" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g transform="translate(0,240)">
+  <circle cy="16" cx="256" r="144" fill-opacity=".5"/>
+  <circle cy="16" cx="256" r="128" fill="#fff"/>
+ </g>
+ <g transform="translate(0 -556.36)">
+  <circle cy="812.36" cx="256" r="100" fill="#a2ff00"/>
+ </g>
 </svg>

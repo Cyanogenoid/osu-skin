@@ -1,146 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="32"
-   viewBox="0 0 256 32"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="followpoint.svg"
-   style="enable-background:new">
-  <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient6874">
-      <stop
-         style="stop-color:#ff00a2;stop-opacity:1;"
-         offset="0"
-         id="stop6876" />
-      <stop
-         style="stop-color:#ff00a2;stop-opacity:0;"
-         offset="1"
-         id="stop6878" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6874"
-       id="linearGradient6904"
-       gradientUnits="userSpaceOnUse"
-       x1="128.21428"
-       y1="924.36218"
-       x2="256"
-       y2="924.36218"
-       gradientTransform="matrix(0.5,0,0,0.5,-128,462.18106)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6874"
-       id="linearGradient6982"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5,0,0,0.5,128,462.18106)"
-       x1="128.21428"
-       y1="924.36218"
-       x2="256"
-       y2="924.36218" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient6874"
-       id="linearGradient4189"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5,0,0,0.5,128,462.18106)"
-       x1="128.21428"
-       y1="924.36218"
-       x2="256"
-       y2="924.36218" />
-    <filter
-       style="color-interpolation-filters:sRGB"
-       id="filter4147"
-       inkscape:label="filter1">
-      <feGaussianBlur
-         stdDeviation="4.0999999999999996"
-         id="feGaussianBlur4149" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter5097"
-       x="0"
-       width="1.0224689"
-       y="-0.71900493"
-       height="2.43801">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.1983415"
-         id="feGaussianBlur5099" />
-    </filter>
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#000000"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="108.82076"
-     inkscape:cy="65.091292"
-     inkscape:document-units="px"
-     inkscape:current-layer="g5263"
-     showgrid="false"
-     units="px"
-     inkscape:showpageshadow="false"
-     inkscape:window-width="2498"
-     inkscape:window-height="1417"
-     inkscape:window-x="54"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     transform="translate(0,-1020.3622)"
-     id="g5263"
-     inkscape:groupmode="layer"
-     inkscape:label="Layer 1"
-     style="display:inline">
-    <g
-       id="g4140"
-       style="opacity:0.8;filter:url(#filter5097)"
-       transform="matrix(0.92338348,0,0,0.90727158,7.151243,197.71466)">
-      <rect
-         transform="scale(-1,1)"
-         style="opacity:1;fill:url(#linearGradient6904);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-opacity:1"
-         id="rect5265"
-         width="128"
-         height="4"
-         x="-128"
-         y="922.36218" />
-      <rect
-         y="922.36218"
-         x="128"
-         height="4"
-         width="128"
-         id="rect6980"
-         style="opacity:1;fill:url(#linearGradient6982);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-opacity:1" />
-    </g>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" style="enable-background:new" xmlns="http://www.w3.org/2000/svg" height="32" width="256" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 32" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="a">
+   <stop stop-color="#ff00a2" offset="0"/>
+   <stop stop-color="#ff00a2" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="f" x1="128.21" xlink:href="#a" gradientUnits="userSpaceOnUse" y1="924.36" gradientTransform="matrix(.5 0 0 .5 -128 462.18)" x2="256" y2="924.36"/>
+  <linearGradient id="g" x1="128.21" xlink:href="#a" gradientUnits="userSpaceOnUse" y1="924.36" gradientTransform="matrix(.5 0 0 .5 128 462.18)" x2="256" y2="924.36"/>
+  <filter id="e" style="color-interpolation-filters:sRGB" height="2.438" width="1.0225" y="-.719" x="0">
+   <feGaussianBlur stdDeviation="1.1983415"/>
+  </filter>
+ </defs>
+ <g transform="translate(0 -1020.4)">
+  <g opacity=".8" filter="url(#e)" transform="matrix(.92338 0 0 .90727 7.1512 197.71)">
+   <rect opacity="1" transform="scale(-1,1)" height="4" width="128" y="922.36" x="-128" fill="url(#f)"/>
+   <rect opacity="1" height="4" width="128" y="922.36" x="128" fill="url(#g)"/>
   </g>
+ </g>
 </svg>
