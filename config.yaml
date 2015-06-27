@@ -5,6 +5,9 @@ svg:
   cursor:
     w: 160
     h: 160
+  cursor-smoke:
+    w: 64
+    h: 64
   default:
     w: 318
     h: 318
