@@ -1,7 +1,7 @@
 svg:
   approachcircle:
-    w: 278
-    h: 278
+    w: 240
+    h: 240
   cursor:
     w: 160
     h: 160
@@ -9,8 +9,8 @@ svg:
     w: 64
     h: 64
   default:
-    w: 318
-    h: 318
+    w: 274
+    h: 274
     names:
       - default-0
       - default-1
@@ -59,7 +59,9 @@ svg:
   selection-mod-*:
     w: 128
     h: 128
-  sliderb0: {}
+  sliderb0:
+    w: 220
+    h: 220
   spinner-middle2:
     w: 96
     h: 96
