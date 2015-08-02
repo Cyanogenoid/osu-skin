@@ -93,6 +93,8 @@ png:
       - hitcircleoverlay
       - hitcircle
       - inputoverlay-background
+      - ranking-maxcombo
+      - ranking-title
       - ready
       - scorebar-colour
       - scorebar-marker
@@ -105,3 +107,59 @@ png:
       - star2
 ini:
   skin: {}
+external:
+  Aesthetic:
+    url: https://dl.dropboxusercontent.com/u/27093909/Aesthetic/Aesthetic_1_3_1.zip
+    png:
+      - button-left:
+          low-res: yes
+      - button-middle:
+          low-res: yes
+      - button-right:
+          low-res: yes
+      - fail-background
+      - menu-back
+      - pause-back
+      - pause-continue
+      - pause-overlay
+      - pause-replay
+      - pause-retry
+      - play-skip
+      - play-unranked
+      - play-warningarrow
+      - ranking-XH
+      - ranking-XH-small
+      - ranking-SH
+      - ranking-SH-small
+      - ranking-X
+      - ranking-X-small
+      - ranking-S
+      - ranking-S-small
+      - ranking-A
+      - ranking-A-small
+      - ranking-B
+      - ranking-B-small
+      - ranking-C
+      - ranking-C-small
+      - ranking-D
+      - ranking-D-small
+      - ranking-graph
+      - ranking-panel
+      - ranking-perfect
+      - section-pass
+      - section-fail
+      - selection-mode
+      - selection-mode-over
+      - selection-mods
+      - selection-mods-over
+      - selection-options
+      - selection-options-over
+      - selection-random
+      - selection-random-over
+      - selection-selectoptions
+      - selection-selectoptions-over
+      - selection-tab:
+          low-res: yes
+      - sliderscorepoint
+      - spinner-clear
+      - spinner-rpm
