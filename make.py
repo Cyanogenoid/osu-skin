@@ -84,6 +84,20 @@ def process_py(target, r):
         name = os.path.join(TARGET_DIR, name + '@2x.png')
         yield Rule(name, ' '.join(deps), coms)
 
+def process_external(skin, r):
+    for target in r.get('png', []):
+        name = target
+        settings = {
+            'low-res': False,
+        }
+        if type(target) == dict:
+            name = next(iter(target))
+            settings.update(target[name])
+        rule = name + ('@2x' if not settings['low-res'] else '') + '.png'
+        dep  = os.path.join(skin, rule)
+        coms = ['cp {{src}} {{tgt}}'.format()]
+        yield make_rule(rule, dep, coms)
+
 def process_config(config):
     for target, r in config.get('svg', {}).items():
         yield from process_svg(target, r)
@@ -93,6 +107,8 @@ def process_config(config):
         yield from process_png(target, r)
     for target, r in config.get('ini', {}).items():
         yield process_ini(target, r)
+    for skin, r in config.get('external', {}).items():
+        yield from process_external(skin, r)
 
 def collect_all_rule(rules):
     targets = [r.rule for r in rules if '%' not in r.rule]
