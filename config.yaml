@@ -62,8 +62,8 @@ svg:
     h: 128
   sliderb0: {}
   spinner-middle2:
-    w: 96
-    h: 96
+    w: 82
+    h: 82
 png:
   blank:
     names:
@@ -163,5 +163,6 @@ external:
       - selection-tab:
           low-res: yes
       - sliderscorepoint
+      - spinner-approachcircle
       - spinner-clear
       - spinner-rpm
