@@ -55,6 +55,7 @@ svg:
     h: 101
   menu-button-background: {}
   reversearrow: {}
+  score-*: {}
   scorebar-bg: {}
   selection-mod-*:
     w: 128
@@ -96,6 +97,7 @@ png:
       - ranking-maxcombo
       - ranking-title
       - ready
+      - score-x
       - scorebar-colour
       - scorebar-marker
       - sliderfollowcircle
