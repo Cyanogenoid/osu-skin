@@ -85,18 +85,24 @@ def process_py(target, r):
         yield Rule(name, ' '.join(deps), coms)
 
 def process_external(skin, r):
-    for target in r.get('png', []):
-        name = target
-        settings = {
-            'low-res': False,
-        }
-        if type(target) == dict:
-            name = next(iter(target))
-            settings.update(target[name])
-        rule = name + ('@2x' if not settings['low-res'] else '') + '.png'
-        dep  = os.path.join(skin, rule)
-        coms = ['cp {{src}} {{tgt}}'.format()]
-        yield make_rule(rule, dep, coms)
+    for ext, targets in r.items():
+        if ext == 'url':
+            continue
+        for target in targets:
+            name = target
+            settings = {
+                'low-res': False,
+            }
+            if ext != 'png':
+                settings['low-res'] = True
+            if type(target) == dict:
+                name = next(iter(target))
+                settings.update(target[name])
+
+            rule = '{}{}.{}'.format(name, '@2x' if not settings['low-res'] else '', ext)
+            dep  = os.path.join(skin, rule)
+            coms = ['cp {{src}} {{tgt}}'.format()]
+            yield make_rule(rule, dep, coms)
 
 def process_config(config):
     for target, r in config.get('svg', {}).items():
