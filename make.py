@@ -72,17 +72,10 @@ def process_ini(target, r):
     return make_rule(rule, dep, coms)
 
 def process_py(target, r):
-    target_path = os.path.join(SOURCE_DIR, target + '.py')
-    deps = [os.path.join(SOURCE_DIR, s) for s in r['srcs']]
-    deps.append(target_path)
-    coms = 'python {}'.format(target_path)
-    try:
-        names = r['names']
-    except KeyError:
-        names = [target]
-    for name in names:
-        name = os.path.join(TARGET_DIR, name + '@2x.png')
-        yield Rule(name, ' '.join(deps), coms)
+    rules = [os.path.join(TARGET_DIR, target) for target in r['targets']]
+    dep = os.path.join(SOURCE_DIR, target + '.py')
+    com = 'python {} {}'.format(dep, ' '.join(rules))
+    return Rule(' '.join(rules), dep, com)
 
 def process_external(skin, r):
     for ext, targets in r.items():
@@ -108,7 +101,7 @@ def process_config(config):
     for target, r in config.get('svg', {}).items():
         yield from process_svg(target, r)
     for target, r in config.get('py', {}).items():
-        yield from process_py(target, r)
+        yield process_py(target, r)
     for target, r in config.get('png', {}).items():
         yield from process_png(target, r)
     for target, r in config.get('ini', {}).items():
