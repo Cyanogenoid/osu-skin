@@ -107,6 +107,10 @@ png:
       - spinner-spin
       - spinner-top
       - star2
+py:
+  menu-background:
+    targets:
+      - menu-background.jpg
 ini:
   skin: {}
 external:
