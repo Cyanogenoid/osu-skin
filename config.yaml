@@ -79,6 +79,8 @@ png:
       - hit300g-0
       - hit300k-0
       - inputoverlay-background
+      - mania-stage-bottom
+      - mania-stage-hint
       - ranking-maxcombo
       - ranking-title
       - ready
@@ -148,6 +150,42 @@ external:
       - button-right:
           low-res: yes
       - fail-background
+      - lightingN-0
+      - lightingN-1
+      - lightingN-2
+      - lightingN-3
+      - lightingN-4
+      - lightingN-5
+      - lightingN-6
+      - lightingN-7
+      - lightingN-8
+      - lightingN-9
+      - lightingN-10
+      - mania-hit0
+      - mania-hit0-0
+      - mania-hit50
+      - mania-hit50-0
+      - mania-hit100
+      - mania-hit100-0
+      - mania-hit200
+      - mania-hit200-0
+      - mania-hit300
+      - mania-hit300-0
+      - mania-hit300g
+      - mania-hit300g-0
+      - mania-hit300g-1
+      - mania-hit300g-2
+      - mania-hit300g-3
+      - mania-hit300g-4
+      - mania-hit300g-5
+      - mania-hit300g-6
+      - mania-hit300g-7
+      - mania-hit300g-8
+      - mania-hit300g-9
+      - mania-stage-left
+      - mania-stage-light:
+          low-res: yes
+      - mania-stage-right
       - menu-back
       - pause-back
       - pause-continue
