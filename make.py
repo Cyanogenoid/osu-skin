@@ -120,9 +120,14 @@ def collect_all_rule(rules):
 
 config = load_config()
 rules = list(process_config(config))
+directories = ['bin', 'bin/mania', 'bin/mania/key', 'bin/mania/note', 'bin/mania/sustain']
+directory_rule = Rule('bin/', '', '\n\t'.join('@if [ ! -d {0} ]; then mkdir {0}; fi'.format(d) for d in directories))
+rules.append(directory_rule)
 rules.append(collect_all_rule(rules))
 with open('Makefile', 'w') as fd:
     for r in reversed(rules):
-        fd.write('{}: {}\n\t{}'.format(r.rule, ' '.join([r.deps, '| bin/']), r.coms))
+        fd.write('{}: {} {}\n\t{}'.format(r.rule,
+                                          r.deps,
+                                          '| bin/' if r.rule != 'bin/' else '',
+                                          r.coms))
         fd.write('\n')
-    fd.write('bin/:\n\t@if [ ! -d bin ]; then mkdir bin; fi\n')

@@ -106,6 +106,41 @@ external:
   Aesthetic:
     url: https://dl.dropboxusercontent.com/u/27093909/Aesthetic/Aesthetic_1_3_1.zip
     png:
+      - mania/key/blue
+      - mania/key/blue-down
+      - mania/key/green
+      - mania/key/green-down
+      - mania/key/pink
+      - mania/key/pink-down
+      - mania/key/purple
+      - mania/key/purple-down
+      - mania/key/red
+      - mania/key/red-down
+      - mania/key/white
+      - mania/key/white-down
+      - mania/key/yellow
+      - mania/key/yellow-down
+      - mania/note/blue
+      - mania/note/green
+      - mania/note/pink
+      - mania/note/purple
+      - mania/note/red
+      - mania/note/white
+      - mania/note/yellow
+      - mania/sustain/blue-0
+      - mania/sustain/blue-1
+      - mania/sustain/green-0
+      - mania/sustain/green-1
+      - mania/sustain/pink-0
+      - mania/sustain/pink-1
+      - mania/sustain/purple-0
+      - mania/sustain/purple-1
+      - mania/sustain/red-0
+      - mania/sustain/red-1
+      - mania/sustain/white-0
+      - mania/sustain/white-1
+      - mania/sustain/yellow-0
+      - mania/sustain/yellow-1
       - button-left:
           low-res: yes
       - button-middle:
