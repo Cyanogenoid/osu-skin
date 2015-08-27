@@ -65,12 +65,6 @@ def process_png(target, r):
         coms = ['cp {{src}} {{tgt}}'.format()]
         yield make_rule(rule, dep, coms)
 
-def process_ini(target, r):
-    rule = target + '.ini'
-    dep  = rule
-    coms = ['cp {{src}} {{tgt}}'.format()]
-    return make_rule(rule, dep, coms)
-
 def process_py(target, r):
     rules = [os.path.join(TARGET_DIR, target) for target in r['targets']]
     dep = os.path.join(SOURCE_DIR, target + '.py')
