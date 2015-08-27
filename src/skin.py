@@ -1,3 +1,7 @@
+import sys
+
+with open(sys.argv[0], 'w') as fd:
+    fd.write('''
 [General]
 
 Name: Cyanogenoid 0.1
@@ -33,3 +37,4 @@ ComboOverlap: 0
 
 ScorePrefix: score
 ScoreOverlap: 0
+    ''')

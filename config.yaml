@@ -111,8 +111,9 @@ py:
   menu-background:
     targets:
       - menu-background.jpg
-ini:
-  skin: {}
+  skin:
+    targets:
+      - skin.ini
 external:
   Aesthetic:
     url: https://dl.dropboxusercontent.com/u/27093909/Aesthetic/Aesthetic_1_3_1.zip
