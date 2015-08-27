@@ -6,7 +6,7 @@
    <feColorMatrix values="1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 1 0 "/>
   </filter>
   <pattern id="c" width="256" patternUnits="userSpaceOnUse" patternTransform="translate(1.0947e-7 796.36)" height="256">
-   <circle opacity="0.97" transform="matrix(.83333 0 0 .83333 -31.658 -580.31)" filter="url(#e)" cy="849.97" cx="191.59" r="128" fill="#fff"/>
+   <circle opacity="0.5" transform="matrix(.83333 0 0 .83333 -31.658 -580.31)" filter="url(#e)" cy="849.97" cx="191.59" r="128" fill="#fff"/>
   </pattern>
   <radialGradient id="b" gradientUnits="userSpaceOnUse" cy="924.36" cx="128" gradientTransform="translate(8.6083984e-6,-4.375e-5)" r="128">
    <stop stop-color="#fff" offset="0"/>
@@ -18,7 +18,7 @@
   <filter id="d" style="color-interpolation-filters:sRGB">
    <feComposite in2="SourceGraphic" k2="1" k1="0" result="composite1" operator="arithmetic"/>
    <feColorMatrix type="saturate" values="1" result="colormatrix1" in="composite1"/>
-   <feFlood result="flood1" flood-color="rgb(162,255,0)"/>
+   <feFlood result="flood1" flood-color="rgb(255,255,255)"/>
    <feBlend result="blend1" mode="multiply" in2="colormatrix1" in="flood1"/>
    <feBlend mode="screen" in2="blend1" result="blend2"/>
    <feColorMatrix type="saturate" values="1" result="colormatrix2" in="blend2"/>
