@@ -41,6 +41,16 @@ config_yaml = '''
 config = yaml.load(config_yaml)
 
 
+def generate_mania(keys):
+    c = {}
+    c['Keys'] = keys
+    return c
+
+
+for keys in range(4, 9):
+    mania = generate_mania(keys)
+    config.append({'Mania': mania})
+
 with open(sys.argv[1], 'w') as fd:
     for key in config:
         key_name, key_content = next(iter(key.items()))
