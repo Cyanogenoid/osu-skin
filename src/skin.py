@@ -52,6 +52,7 @@ with open(sys.argv[1], 'w') as fd:
             fd.write('{}: {}\n'.format(option, value))
         fd.write('''[Mania]
 Keys: 4
+NoteBodyStyle: 0
 // Aesthetic HD
 // Mania 4k config
 
@@ -116,6 +117,7 @@ KeyImage3D: mania/key/purple-down
 ColumnLineWidth: 0,0,2,0,0
 [Mania]
 Keys: 5
+NoteBodyStyle: 0
 // Aesthetic HD
 // Mania 5k config
 
@@ -189,6 +191,7 @@ KeyImage4D: mania/key/purple-down
 ColumnLineWidth: 0,0,0,0,0,0
 [Mania]
 Keys: 6
+NoteBodyStyle: 0
 // Aesthetic HD
 // Mania 6k config
 
@@ -267,6 +270,7 @@ KeyImage5D: mania/key/white-down
 ColumnLineWidth: 0,0,0,2,0,0,0
 [Mania]
 Keys: 7
+NoteBodyStyle: 0
 // Aesthetic HD
 // Mania 7k config
 
@@ -375,6 +379,7 @@ ColumnWidth: 36,32,36,32,32,36,32,36
 
 // ColumnLine
 ColourColumnLine: 255,255,255,12
+NoteBodyStyle: 0
 
 // Colours
 Colour1: 0,0,0,150
