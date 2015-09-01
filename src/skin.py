@@ -15,8 +15,9 @@ config_yaml = '''
 
 
 - Colours:
-    Combo1: 255, 255, 255
-    Combo2: 0, 162, 255
+    Combo1: 0, 162, 255
+    Combo2: 255, 187, 0
+    Combo3: 255, 61, 0
 
     SliderTrackOverride: 0, 0, 0
     SliderBorder: 91, 91, 91
