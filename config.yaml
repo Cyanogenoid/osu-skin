@@ -86,6 +86,8 @@ png:
       - scorebar-bg
       - scorebar-colour
       - scorebar-marker
+      - sliderendcircle
+      - sliderendcircleoverlay
       - sliderfollowcircle
       - spinner-bottom
       - spinner-glow
