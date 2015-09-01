@@ -30,8 +30,8 @@ config_yaml = '''
 
 
 - Fonts:
-    HitCirclePrefix: default
-    HitCircleOverlap: 159
+    HitCirclePrefix: score
+    HitCircleOverlap: 0
 
     ComboPrefix: combo
     ComboOverlap: 0
