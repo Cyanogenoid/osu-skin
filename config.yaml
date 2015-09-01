@@ -8,20 +8,6 @@ svg:
   cursor-smoke:
     w: 64
     h: 64
-  default:
-    w: 318
-    h: 318
-    names:
-      - default-0
-      - default-1
-      - default-2
-      - default-3
-      - default-4
-      - default-5
-      - default-6
-      - default-7
-      - default-8
-      - default-9
   followpoint:
     w: 256
     h: 32
@@ -50,6 +36,8 @@ svg:
   hit50:
     w: 92
     h: 92
+  hitcircle: {}
+  hitcircleoverlay: {}
   inputoverlay-key:
     w: 101
     h: 101
@@ -90,8 +78,6 @@ png:
       - hit300-0
       - hit300g-0
       - hit300k-0
-      - hitcircleoverlay
-      - hitcircle
       - inputoverlay-background
       - ranking-maxcombo
       - ranking-title
