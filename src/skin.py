@@ -25,6 +25,7 @@ config_yaml = '''
     SongSelectInactiveText: 192, 192, 192
 
     MenuGlow: 255, 255, 255
+    InputOverlayText: 0, 127, 57
 
 
 - Fonts:
