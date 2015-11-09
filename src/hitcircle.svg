@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="256"
+   width="256"
+   version="1.1"
+   viewBox="0 0 256 256"
+   id="svg4153"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hitcircle.svg">
+  <metadata
+     id="metadata4176">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2498"
+     inkscape:window-height="1417"
+     id="namedview4174"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="137.81401"
+     inkscape:cy="121.30164"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4153" />
+  <defs
+     id="defs4155">
+    <filter
+       id="a"
+       style="color-interpolation-filters:sRGB">
+      <feFlood
+         result="flood"
+         flood-color="rgb(0,162,255)"
+         id="feFlood4158" />
+      <feComposite
+         operator="in"
+         result="composite1"
+         in2="flood"
+         in="SourceGraphic"
+         id="feComposite4160" />
+      <feGaussianBlur
+         stdDeviation="2"
+         result="blur"
+         in="composite1"
+         id="feGaussianBlur4162" />
+      <feOffset
+         result="offset"
+         dx="0"
+         dy="0"
+         id="feOffset4164" />
+      <feComposite
+         operator="over"
+         result="composite2"
+         in2="offset"
+         in="SourceGraphic"
+         id="feComposite4166" />
+    </filter>
+  </defs>
+  <circle
+     opacity=".97"
+     fill-opacity=".25098"
+     cy="128"
+     cx="128"
+     r="89.585"
+     id="circle4168"
+     style="fill:#000000;fill-opacity:1;opacity:0.5" />
+  <g
+     filter="url(#a)"
+     style=""
+     transform="translate(0 -796.36)"
+     id="g4170">
+    <circle
+       r="97.109"
+       cy="924.36"
+       stroke="#fff"
+       cx="128"
+       stroke-width="30"
+       fill="none"
+       id="circle4172" />
+  </g>
+</svg>
