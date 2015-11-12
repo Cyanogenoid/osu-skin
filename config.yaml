@@ -3,8 +3,8 @@ svg:
     w: 278
     h: 278
   cursor:
-    w: 160
-    h: 160
+    w: 256
+    h: 256
   cursor-smoke:
     w: 64
     h: 64
