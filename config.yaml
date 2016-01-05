@@ -8,13 +8,6 @@ svg:
   cursor-smoke:
     w: 64
     h: 64
-  followpoint:
-    w: 256
-    h: 32
-    names:
-      - followpoint-3
-      - followpoint-4
-      - followpoint-5
   hit*-0:
     w: 128
     h: 128
@@ -69,11 +62,7 @@ png:
       - count2
       - count3
       - cursortrail
-      - followpoint-0
-      - followpoint-1
-      - followpoint-2
-      - followpoint-6
-      - followpoint-7
+      - followpoint
       - go
       - hit300-0
       - hit300g-0
