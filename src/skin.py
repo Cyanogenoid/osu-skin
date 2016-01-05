@@ -7,7 +7,7 @@ from colormath.color_conversions import convert_color
 
 config_yaml = '''
 - General:
-    Name: Cyanogenoid 0.1
+    Name: Cyanogenoid 0.2
     Author: Cyanogenoid
     Version: 2.5
 
