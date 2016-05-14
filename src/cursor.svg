@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="512"
@@ -22,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,19 +36,31 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2498"
-     inkscape:window-height="1417"
+     inkscape:window-width="2480"
+     inkscape:window-height="1399"
      id="namedview21"
      showgrid="false"
-     inkscape:zoom="1.3037281"
-     inkscape:cx="247.2112"
-     inkscape:cy="270.79883"
-     inkscape:window-x="54"
-     inkscape:window-y="-8"
+     inkscape:zoom="0.92187498"
+     inkscape:cx="-302.87358"
+     inkscape:cy="44.439148"
+     inkscape:window-x="64"
+     inkscape:window-y="1"
      inkscape:window-maximized="0"
      inkscape:current-layer="g17-9" />
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4303">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop4305" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1"
+         id="stop4307" />
+    </linearGradient>
     <filter
        id="a"
        style="color-interpolation-filters:sRGB">
@@ -111,19 +124,6 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter4312"
-       x="-0.48"
-       width="1.96"
-       y="-0.48"
-       height="1.96">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="40"
-         id="feGaussianBlur4314" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
        id="filter4428"
        x="-0.012"
        width="1.024"
@@ -147,6 +147,30 @@
          stdDeviation="21"
          id="feGaussianBlur4535" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4271"
+       x="-0.6"
+       width="2.2"
+       y="-0.6"
+       height="2.2">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="50"
+         id="feGaussianBlur4273" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4303"
+       id="radialGradient4309"
+       cx="251.1209"
+       cy="814.11731"
+       fx="251.1209"
+       fy="814.11731"
+       r="20.07464"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.1820293,0,0,2.1820293,-296.83232,-962.31068)" />
   </defs>
   <g
      filter="url(#a)"
@@ -163,22 +187,28 @@
      transform="matrix(1.28,0,0,1.28,-65.434739,-786.07012)"
      id="g17-9">
     <circle
+       id="path4291-7-3"
+       cx="251.12088"
+       cy="814.11725"
+       r="100"
+       style="opacity:0.25;fill:#000000;fill-opacity:1;filter:url(#filter4271)" />
+    <circle
        id="path4291"
        cx="251.1209"
        cy="814.11731"
        style="fill:#a2ff00;fill-opacity:1;filter:url(#filter4428)"
        r="50" />
     <circle
-       id="path4291-7"
-       cx="251.12088"
-       cy="814.11725"
-       r="100"
-       style="fill:#a2ff00;fill-opacity:1;filter:url(#filter4312);opacity:0.5" />
-    <circle
        id="path4291-9"
        cx="251.12088"
        cy="814.11725"
-       style="fill:#a2ff00;fill-opacity:1;filter:url(#filter4533)"
+       style="fill:#a2ff00;fill-opacity:1;filter:url(#filter4533);color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill-rule:nonzero;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter-blend-mode:normal;filter-gaussianBlur-deviation:0;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        r="50" />
+    <circle
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.4;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:url(#radialGradient4309);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path4286"
+       cx="251.1209"
+       cy="814.11731"
+       r="43.803455" />
   </g>
 </svg>
