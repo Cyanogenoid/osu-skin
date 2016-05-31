@@ -30,7 +30,6 @@ svg:
     w: 92
     h: 92
   hitcircle: {}
-  hitcircleoverlay: {}
   inputoverlay-key:
     w: 101
     h: 101
@@ -47,6 +46,7 @@ svg:
 png:
   blank:
     names:
+      - hitcircleoverlay
       - combo-0.png
       - combo-1.png
       - combo-2.png

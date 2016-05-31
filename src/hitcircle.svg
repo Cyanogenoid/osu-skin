@@ -11,23 +11,23 @@
    width="256"
    version="1.1"
    viewBox="0 0 256 256"
-   id="svg4153"
+   id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="hitcircle.svg">
   <metadata
-     id="metadata4176">
+     id="metadata38">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#475963"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -37,68 +37,99 @@
      inkscape:pageshadow="2"
      inkscape:window-width="2498"
      inkscape:window-height="1417"
-     id="namedview4174"
+     id="namedview36"
      showgrid="false"
      inkscape:zoom="3.6875"
-     inkscape:cx="137.81401"
-     inkscape:cy="121.30164"
+     inkscape:cx="15.609242"
+     inkscape:cy="136.42016"
      inkscape:window-x="54"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4153" />
+     inkscape:current-layer="svg2" />
   <defs
-     id="defs4155">
+     id="defs4">
+    <filter
+       id="b"
+       style="color-interpolation-filters:sRGB">
+      <feFlood
+         result="flood"
+         flood-color="rgb(0,162,255)"
+         id="feFlood7" />
+      <feComposite
+         operator="in"
+         result="composite1"
+         in2="flood"
+         in="SourceGraphic"
+         id="feComposite9" />
+      <feGaussianBlur
+         stdDeviation="2"
+         result="blur"
+         in="composite1"
+         id="feGaussianBlur11" />
+      <feOffset
+         result="offset"
+         dx="0"
+         dy="0"
+         id="feOffset13" />
+      <feComposite
+         operator="over"
+         result="composite2"
+         in2="offset"
+         in="SourceGraphic"
+         id="feComposite15" />
+    </filter>
     <filter
        id="a"
        style="color-interpolation-filters:sRGB">
       <feFlood
          result="flood"
          flood-color="rgb(0,162,255)"
-         id="feFlood4158" />
+         id="feFlood18" />
       <feComposite
          operator="in"
          result="composite1"
          in2="flood"
          in="SourceGraphic"
-         id="feComposite4160" />
+         id="feComposite20" />
       <feGaussianBlur
          stdDeviation="2"
          result="blur"
          in="composite1"
-         id="feGaussianBlur4162" />
+         id="feGaussianBlur22" />
       <feOffset
          result="offset"
          dx="0"
          dy="0"
-         id="feOffset4164" />
+         id="feOffset24" />
       <feComposite
          operator="over"
          result="composite2"
          in2="offset"
          in="SourceGraphic"
-         id="feComposite4166" />
+         id="feComposite26" />
     </filter>
   </defs>
   <circle
-     opacity=".97"
-     fill-opacity=".25098"
-     cy="128"
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#404040;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:16;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     id="path4168"
      cx="128"
-     r="89.585"
-     id="circle4168"
-     style="fill:#000000;fill-opacity:1;opacity:0.5" />
+     cy="128"
+     r="112" />
   <g
      filter="url(#a)"
-     style=""
-     transform="translate(0 -796.36)"
-     id="g4170">
+     transform="matrix(.89954 0 0 .89954 -114.88 -725.05)"
+     id="g28" />
+  <g
+     transform="translate(-.0000095367 -796.36)"
+     id="g32"
+     filter="url(#b)">
     <circle
-       r="97.109"
+       r="111.58"
        cy="924.36"
-       stroke="#fff"
        cx="128"
-       stroke-width="30"
-       fill="none"
-       id="circle4172" />
+       id="circle34"
+       stroke-width="14.847"
+       stroke="#fff"
+       fill="none" />
   </g>
 </svg>
