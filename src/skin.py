@@ -1,8 +1,8 @@
 import sys
 
 import yaml
-from colormath.color_objects import sRGBColor, LCHuvColor, SpectralColor
-from colormath.color_conversions import convert_color
+import numpy as np
+import colorspacious as col
 
 
 config_yaml = '''
@@ -43,18 +43,16 @@ config = yaml.load(config_yaml)
 
 
 def generate_combo_colours():
-    offset = 40
-    # number of colors to generate
-    n = 3
-    # generate colors
-    l = 75.0
-    c = 50.0
-    for i in range(n):
-        # evenly spaced out hues excluding reference hue
-        h = i * 360 / n + offset
-        lch = LCHuvColor(l, c, h)
-        rgb = convert_color(lch, sRGBColor, target_illuminant='d65')
-        yield rgb.get_upscaled_value_tuple()
+    n_colors = 3
+    colorfulness = 20
+    brightness = 60
+
+    for i in range(n_colors):
+        hue = i * (2 * np.pi) / n_colors
+        Jab = [brightness, colorfulness * np.cos(hue), colorfulness * np.sin(hue)]
+        sRGB255 = col.cspace_convert(Jab, "CAM02-LCD", 'sRGB255')
+        sRGB255 = np.clip(np.round(sRGB255), 0, 255)
+        yield sRGB255
 
 
 def generate_mania(keys):
@@ -71,7 +69,7 @@ for entry in config:
     key_name, key_content = next(iter(entry.items()))
     if key_name == 'Colours':
         for i, color in enumerate(generate_combo_colours(), start=1):
-            key_content['Combo{}'.format(i)] = ', '.join(map(str, color))
+            key_content['Combo{}'.format(i)] = ', '.join(map('{:.0f}'.format, color))
         break
 
 with open(sys.argv[1], 'w') as fd:
