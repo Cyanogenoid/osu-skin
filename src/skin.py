@@ -7,7 +7,7 @@ import colorspacious as col
 
 config_yaml = '''
 - General:
-    Name: Cyanogenoid 0.2
+    Name: Cyanogenoid 0.3
     Author: Cyanogenoid
     Version: 2.5
 
