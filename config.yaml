@@ -132,6 +132,22 @@ external:
       - ranking-perfect
       - section-pass
       - section-fail
+      - selection-mod-autoplay
+      - selection-mod-cinema
+      - selection-mod-doubletime
+      - selection-mod-easy
+      - selection-mod-flashlight
+      - selection-mod-halftime
+      - selection-mod-hardrock
+      - selection-mod-hidden
+      - selection-mod-nightcore
+      - selection-mod-nofail
+      - selection-mod-perfect
+      - selection-mod-relax
+      - selection-mod-relax2
+      - selection-mod-spunout
+      - selection-mod-suddendeath
+      - selection-mod-target
       - selection-mode
       - selection-mode-over
       - selection-mods
