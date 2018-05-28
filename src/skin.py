@@ -2,7 +2,7 @@ import sys
 
 import yaml
 import numpy as np
-import colorspacious as col
+import colorio as col
 
 
 config_yaml = '''
@@ -43,16 +43,20 @@ config = yaml.load(config_yaml)
 
 
 def generate_combo_colours():
-    n_colors = 3
-    colorfulness = 20
-    brightness = 60
+    n_colors = 7
+    colorfulness = 0.06
+    brightness = 0.11
+    hue_offset = 0.5
 
     for i in range(n_colors):
-        hue = i * (2 * np.pi) / n_colors
+        hue = (i + hue_offset) * (2 * np.pi) / n_colors
         Jab = [brightness, colorfulness * np.cos(hue), colorfulness * np.sin(hue)]
-        sRGB255 = col.cspace_convert(Jab, "CAM02-LCD", 'sRGB255')
-        sRGB255 = np.clip(np.round(sRGB255), 0, 255)
-        yield sRGB255
+        xyz = col.JzAzBz().to_xyz100(Jab)
+        srgb_lin = col.SrgbLinear().from_xyz100(xyz)
+        srgb1 = col.SrgbLinear().to_srgb1(srgb_lin)
+        srgb255 = np.clip(np.round(srgb1 * 255), 0, 255)
+        print(srgb255)
+        yield srgb255
 
 
 def generate_mania(keys):
